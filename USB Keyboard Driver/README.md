@@ -12,7 +12,7 @@ In MODE2, the driver will leave the CAPSLOCK LED status in a way that will be co
 ### Steps 
 1. Perform the command **`sudo apt-get install linux-headers-$(uname -r)`** to install linux headers.
 2. Build usbkbd driver using the **`make`** command.
-3: Insert the driver using the command **`sudo insmod usbkbd.ko`**
-4: Ensure USB keyboard is connected and detected in the Machine (or VM). Bind the usbkbd driver to the USB keyboard by the running the test.sh script as **`sudo ./test.sh`**.
+3. Insert the driver using the command **`sudo insmod usbkbd.ko`**
+4. Ensure USB keyboard is connected and detected in the Machine (or VM). Bind the usbkbd driver to the USB keyboard by the running the test.sh script as **`sudo ./test.sh`**.
 5. Test the keyboard. Check dmesg logs to ensure correct behavior.
 6. Remove usbkbd driver using the **`sudo rmmod usbkbd`** command.
