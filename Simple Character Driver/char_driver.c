@@ -20,7 +20,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Deepak Abraham Tom");
-MODULE_DESCRIPTION("ASP - Assignment 5");
+MODULE_DESCRIPTION("Simple Character Driver");
 MODULE_VERSION("1.0");           
 
 
