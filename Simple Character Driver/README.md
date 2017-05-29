@@ -5,7 +5,7 @@ An IOCTL to clear device buffer is also implemented.
 
 
 ### Important Commands
-1. To install linux headers: sudo apt-get install linux-headers-$(uname -r)
+1. To install linux headers: **`sudo apt-get install linux-headers-$(uname -r)`**
 2. To compile the LKM: **`make`**
 3. To clean the compiled objects: **`make clean`**
 4. To insert the module: **`sudo insmod char_driver.ko`** (creates three /dev entries - /dev/mycdev0, /dev/mycdev1 and /dev/mycdev2 by default)
