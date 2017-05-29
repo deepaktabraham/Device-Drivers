@@ -15,7 +15,7 @@ An IOCTL to clear device buffer is also implemented.
 
 ### Using the custom IOCTL
 The IOCTL ***CLEAR_BUF*** which clears the device buffer, is declared in the header file mycdev.h
-Add mycdev.h in your test program, so as to correctly call this custom ioctl.
+Add mycdev.h in your test program so as to correctly call this custom ioctl.
 That is, include the following line to your test program (replace <path_to_directory> appropriately): <br />
 ***#include "<path_to_directory>/mycdev.h"***
 
@@ -28,10 +28,10 @@ The following system call can be added in your test program to invoke this ioctl
 
 
 ### NOTE:
-Please make sure that you have read and write privilege for the device entries created during insertion of the module,
+Make sure that you have read and write privilege for the device entries created during insertion of the module
 before testing. 
-One way of achieving this is to run the following command in the terminal, before running your test program: <br />
+One way of achieving this is to run the following command in the terminal before running your test program: <br />
 **`sudo chmod 660 /dev/mycdev*`**
 
-You can also achieve the same effect by running your test program, with superuser privilege: <br />
+You can also achieve the same effect by running your test program with superuser privilege: <br />
 **`$ sudo ./<executable_test_app>`**
