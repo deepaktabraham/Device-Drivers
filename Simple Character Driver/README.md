@@ -8,7 +8,7 @@ An IOCTL to clear device buffer is also implemented.
 1. To compile the LKM: **`make`**
 2. To clean the compiled objects: **`make clean`**
 3. To insert the module: **`sudo insmod char_driver.ko`** (creates three /dev entries - /dev/mycdev0, /dev/mycdev1 and /dev/mycdev2 by default)
-4. To insert the module with variable number of devices, use the ***"NUM_DEVICES"*** parameter. For example, **`sudo insmod char_driver.ko NUM_DEVICES=5`** will create five /dev entries
+4. To insert the module with variable number of devices, use the ***NUM_DEVICES*** parameter. For example, **`sudo insmod char_driver.ko NUM_DEVICES=5`** will create five /dev entries
 5. To check if the module is inserted: **`lsmod | grep char_driver`**
 6. To remove the LKM: **`sudo rmmod char_driver`**
 
