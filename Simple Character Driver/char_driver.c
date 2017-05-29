@@ -415,7 +415,7 @@ static long dev_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 
 	switch(cmd)
 	{
-		case ASP_CLEAR_BUF:
+		case CLEAR_BUF:
 			memset(dev->ramdisk, '\0', dev->ramdisk_size);		
 
 
@@ -423,8 +423,8 @@ static long dev_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 			filp->f_pos = 0;	
 
 
-			// ASP_CLEAR_BUF successful
-			printk(KERN_INFO "[/dev/%s%d] IOCTL success: ASP_CLEAR_BUF\n", DEVICE_NAME, dev->devNo);
+			// CLEAR_BUF successful
+			printk(KERN_INFO "[/dev/%s%d] IOCTL success: CLEAR_BUF\n", DEVICE_NAME, dev->devNo);
 			retVal = 0;
 			break;
 
